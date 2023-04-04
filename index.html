@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Cowntdow</title>
+</head>
+<body>
+    <main>
+        <div class="countdown__container">
+            
+            <div class="countdown__content">
+                <h1>READY TO LAUNCH IN...</h1>
+                <div class="countdown__timer">
+                    <div class="timer-content days">
+                        Dias
+                        <h3>15</h3>
+                    </div>
+                    <span>:</span>
+                    <div class="timer-content hours">
+                        Horas
+                        <h3>0</h3>
+                    </div>
+                    <span>:</span>
+                    <div class="timer-content minutes">
+                        Minutos
+                        <h3>0</h3>
+                    </div>
+                    <span>:</span>
+                    <div class="timer-content seconds">
+                        Segundos
+                        <h3>0</h3>
+                    </div>
+                </div>                
+            </div>
+
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+
+            <button class="button-hover-background">Inscreva-se</button>
+        </div>
+        <img src="/assets/images/rocket.svg" alt="">
+    </main>
+
+    <nav>
+        <div class="menu">
+            <div class="icon-content">
+                <i class="ph-bold ph-clock-countdown"></i>
+                <span>Timer</span>
+            </div>  
+            <div class="icon-content">
+                <i class="ph-bold ph-moon"></i>
+                <span>Tema Claro</span>
+            </div>
+        </div>
+        
+        <div class="modal alarm__container sr-only">
+            
+            <div class="modal alarm__content">
+                <i class="ph-bold ph-x"></i>
+
+                <div class="modal alarm__title">
+                    <i class="ph-bold ph-alarm"></i>
+                    <h3>Configurações do timer</h3>
+                </div>
+
+                <div class="modal countdown__change">
+                    <div class="timer-content days">
+                        <label for="">Dias</label>
+                        <input type="text" placeholder="00" maxlength="2">
+                    </div>
+                    <div class="timer-content hours">
+                        <label for="">Horas</label>
+                        <input type="text" placeholder="00" maxlength="2">
+                    </div>
+                    <div class="timer-content minutes">
+                        <label for="">Minutos</label>
+                        <input type="text" placeholder="00" maxlength="2">
+                    </div>
+                </div>
+
+                <div class="modal alarm__change">
+                    <i class="ph-bold ph-bell-ringing"></i>
+                    Clock Alarm 01
+                </div>
+
+
+                <div class="modal alarm-container sr-only">
+                    <div class="modal alarm-container__title">
+                        <i class="ph-bold ph-arrow-u-up-left"></i>                    
+                        <h3>Som do alarme</h3>
+                        <i></i>                    
+                    </div>
+                    
+                    <div class="alarm-content">
+                        <div>
+                            <i class="ph-bold ph-bell-slash"></i>
+                            Silencioso
+                        </div>
+                    </div>
+                    
+                    <div class="alarm-content">
+                        <div>
+                            <i class="ph-bold ph-bell-ringing"></i>
+                            Clock Alarm 01
+                        </div>
+                        <img class="sr-only" src="/assets/images/18544-music-play.gif" alt="playing-music">
+                        <audio class="alarm" src="/assets/alarms/Clock Alarm 01.mp3" loop current></audio>
+                    </div>
+
+                    <div class="alarm-content">
+                        <div>
+                            <i class="ph-bold ph-bell-ringing"></i>
+                            Clock Alarm 02
+                        </div>
+                        <img class="sr-only" src="/assets/images/18544-music-play.gif" alt="playing-music">
+                        <audio class="alarm" src="/assets/alarms/Clock Alarm 02.mp3" loop></audio>
+                    </div>
+
+                </div>
+                
+                <button class="play"><i class="ph-fill ph-play-circle button-hover-color"></i></button>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
